@@ -1,0 +1,116 @@
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+}
+
+body{
+	color: black;
+	display: flex;
+	justify-content: center; 
+	align-items: center;
+	font-family: sans-serif;
+}
+
+
+.wrapper{
+   background: white;
+   margin-top: 10vh;
+
+
+}
+ 
+ .title{
+   text-align: center;
+ }
+
+
+ .info_box{
+ 	margin-top: 5vh;
+ 	display: grid;
+ 	grid-template-columns: repeat(2); 
+ 	justify-content: space-around;
+ 	 
+ } 
+
+
+ .player_sign {
+ 	padding-left: 3vw;
+ }
+
+     	
+
+.win_sign{
+  display: none;
+  position: fixed;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: purple;
+  margin-top: 4.32vh;
+  margin-left: 4.16vw;
+  width: 13.89vw;
+  height: 7.21vh;
+}
+
+
+.win_sign.active{
+	display: flex;
+}
+ 
+
+.new_game{
+	 background-color: grey;
+	 color: white;
+	 cursor: pointer; 
+	 width: 6.94vw;
+	 height: 2.88vh;
+	 margin-top: 2vh;
+	 justify-content: center;
+	 align-items: center;
+} 
+
+
+.new_game:hover{
+     background-color: black;
+}
+ 
+ 
+
+.game_grid{
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-template-rows: repeat(3, auto);
+  background: grey;
+  grid-gap: 0.5em;
+  margin-top: 7.21vh;
+}
+
+
+.grid_cell{
+	width: 6.94vw; 
+	height: 14.43vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	background: white;
+}	 
+
+
+.x, .o {
+	cursor: default;
+}
+
+.x::after{
+	content: 'x';
+	font-size: 2em;
+}
+
+
+.o::after{
+	content: 'o';
+	font-size: 2em;
+}
+
+
